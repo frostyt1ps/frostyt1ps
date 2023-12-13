@@ -1,0 +1,192 @@
+/* styles.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+
+/* Profile Image Styles */
+.profile-img {
+  margin-top: 40px;
+  max-width: 100%; /* Set the maximum width to the available space */
+  height: auto; /* Let the height scale according to the width */
+  width: 100%; /* Take up 100% of the container's width */
+  justify-self: end; /* Aligns the image to the end of its column */
+  border-radius: 10px; /* Apply rounded corners */
+}
+
+/* Body Styles */
+body {
+  font-family: 'Teko', sans-serif;
+  background-image: url('webpaper.jpg');
+  background-size: cover; 
+  background-repeat: no-repeat; 
+}
+
+* {
+  font-family: 'Silkscreen', monospace;
+}
+
+/* Navbar Styles */
+/* Navbar Styles */
+.navbar {
+  border-bottom: 1px solid black; /* Changed border thickness */
+  margin-bottom: 10px; /* Added margin at the bottom of the navbar */
+  border-radius: 10px; /* Applied rounded corners */
+  background-color:  #6d597a !important; /* Added !important to override any other styles */
+}
+
+/* Remove light purple color from body-wrap */
+.body-wrap {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+  height: 55vh; /* Increased height by 20% */
+  grid-column-gap: 0;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+/* Apply light purple color to user-wrap */
+.user-wrap {
+  border: 1px solid black;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  margin-bottom: 20px;
+  background-color: rgba(230, 213, 255, 0.6); /* Light purple background color */
+  color: rgba(0, 0, 0, 0.9);
+  border-radius: 10px;
+  height: 88%; /* Set the height of user-wrap as 70% of the body-wrap */
+  text-align: center; /* Center the text horizontally */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}  
+
+/* Apply light purple color to user-about-wrap */
+.user-about-wrap {
+  border-right: 1% solid black;
+  padding: 0 1%; 
+  min-height: 30%; /* Set the min-height of user-about-wrap as 30% of the body-wrap */
+  background-color: rgba(230, 213, 255, 0.6); /* Light purple background color */
+  color: rgba(0, 0, 0, 0.9);
+  border-radius: 10px;
+  text-align: center; /* Center the text horizontally */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Flexbox styling for cards container */
+.cards-container {
+  display: flex;
+  flex-direction: row; /* Set cards in a row */
+  flex-wrap: wrap; /* Enable wrapping of cards if they exceed the width */
+  gap: 2%; /* Adjust spacing between cards */
+  margin-top: 5%; /* Add space between body-wrap and cards */
+  margin-bottom: 30px;
+}
+
+/* Card Styles */
+.card {
+  width: 30%; /* Adjust card width as needed */
+  background-color: rgba(230, 213, 255, 0.6); /* Light purple background color */
+  color: rgba(0, 0, 0, 0.9);
+  border-radius: 10px; /* Apply rounded corners */
+  margin-bottom: 10px; /* Modify the bottom margin to reduce space between cards */
+  margin-left: 12px;
+  margin-right: 12px;
+}
+
+/* Card Title and Text Styles */
+.card-title, .card-text {
+  color: rgba(0, 0, 0, 0.9);
+}
+
+/* styles.css */
+.projects-portfolio {
+  background-color: rgba(230, 213, 255, 0.6); /* Light purple background color */
+  border-radius: 10px; /* Apply rounded corners */
+  padding: 10px; /* Add padding to the Projects Portfolio */
+  margin: 20px auto; /* Auto left and right margins for centering horizontally, 20px top margin */
+  max-width: fit-content; /* Set max-width to fit the content */
+  text-align: center; /* Center the text content inside the div */
+}
+
+.profile-details-box {
+  background-color: rgba(230, 213, 255, 0.6); /* Light purple background color */
+  color: #2f4281;
+  border-radius: 10px; /* Apply rounded corners */
+  padding: 10px; /* Add padding */
+  margin-top: 20px;
+}
+
+.profile-details {
+  margin: 0;
+  font-size: 18px; /* Increase font size */
+  font-weight: bold; /* Bolden the text */
+  color: #2f4281;
+}
+
+.profile-details i {
+  margin-right: 5px;
+  font-size: 40px;
+  color: #7e3240;
+  transition: filter 0.3s ease-in-out; /* Adding transition for smoother effect */
+}
+
+.profile-details i:hover {
+  filter: brightness(70%); /* Darkening effect on hover */
+}
+
+.profile-details a {
+  color: #2f4281; /* Set link color */
+  text-decoration: none; /* Remove default underline */
+  transition: color 0.3s ease-in-out; /* Adding transition for smoother effect */
+}
+
+/* Darkening effect on hover */
+.profile-details i:hover,
+.profile-details a:hover {
+  filter: brightness(70%);
+  cursor: pointer; /* Change cursor to indicate clickable element */
+}
+
+/* Make the links more interactive when clicked */
+.profile-details a:active {
+  color: #da6a4c; /* Change link color on click */
+}
+
+/* Adding hover effect to cards */
+.card {
+  /* Other styles... */
+  transition: transform 0.3s ease-in-out; /* Adding transition for smooth transform */
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Move the card 5px up on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow on hover */
+}
+
+.silkscreen-font {
+  font-family: 'Silkscreen', monospace;
+  /* Other styles if needed */
+}
+
+.custom-spacing {
+  line-height: 1.5;
+  letter-spacing: 1px; /* Adjust as needed */
+  /* Other styles if needed */
+}
+
+.user-wrap p {
+  font-size: 109%;
+}
+
+.user-about-wrap {
+  font-family: 'Silkscreen', monospace;
+  font-size: 120%; /* Adjust the font size as needed */
+  line-height: 1.5;
+  letter-spacing: 1px;
+}
